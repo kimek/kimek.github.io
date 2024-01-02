@@ -2,3 +2,11 @@ theme: jekyll-theme-midnight
 title: Mateusz Kimont
 description: Full stack web developer - remote only for hire
 show_downloads: false
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      languages:  "Languages / Idiomas / Jezyki"
+      lang: "en-US"
