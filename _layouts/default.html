@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ page.lang }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +24,7 @@
             <li class="downloads"><a href="/pl.html">PL</a></li>
             <li class="downloads"><a href="/es.html">ES</a></li>
             <li class="downloads"><a href="/">EN</a></li>
-            <li class="title">{{ site.languages }}</li>
+            <li class="title">{{ page.languages }}</li>
         </ul>
     </nav>
 </div><!-- end header -->
@@ -33,8 +33,8 @@
 
     <section>
         <div id="title">
-            <h1>{{ site.title | default: site.github.repository_name }}</h1>
-            <p>{{ site.description | default: site.github.project_tagline }}</p>
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.description }}</p>
             <hr>
         </div>
 
