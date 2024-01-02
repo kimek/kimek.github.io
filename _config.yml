@@ -9,5 +9,14 @@ defaults:
       languages:  "Languages / Idiomas / Jezyki"
       lang: "en-US"
       title: "Mateusz Kimont"
-      name: "Matt Kimont"
+      firstname: "Matt Kimont"
+      description: "Full stack web developer - remote only for hire"
+  - scope:
+      path: "index.html"
+    values:
+      layout: "default"
+      languages: "Languages / Idiomas / Jezyki"
+      lang: "en-US"
+      title: "Mateusz Kimont"
+      firstname: "Matt Kimont"
       description: "Full stack web developer - remote only for hire"
