@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="{{ page.lang }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    {% include head-custom.html %}
+</head>
+<body>
+<div id="header">
+    <nav>
+        <ul>
+            <li class="downloads"><a href="/pl.html">PL</a></li>
+            <li class="downloads"><a href="/es.html">ES</a></li>
+            <li class="downloads"><a href="/">EN</a></li>
+            <li class="title">{{ page.languages }}</li>
+        </ul>
+    </nav>
+</div><!-- end header -->
+
+<div class="wrapper">
+
+    <section>
+        <div id="title">
+            <h1>{{ page.firstname }}</h1>
+            <p>{{ page.description }}</p>
+            <hr>
+            <p>{{ page.category }}</p>
+            <hr>
+        </div>
+
+        {{ content }}
+
+        <style>
+            .block {
+                border-left: 3px solid #ffcc00;
+                margin: 0;
+                padding: 0 0 0 20px;
+                margin: 0 0 10px;
+            }
+        </style>
+    </section>
+</div>
+
+</body>
+</html>
