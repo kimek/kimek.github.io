@@ -47,24 +47,25 @@
                 padding: 0 0 0 20px;
                 margin: 0 0 10px;
             }
-            h3.job + div {
+
+            .job:hover {
+                cursor:pointer;
+            }
+            .job h3 + div {
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height .4s cubic-bezier(0.46, 0.03, 0.52, 0.96), opacity .4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
                 opacity: 0;
             }
-            h3.job:hover {
-                cursor:pointer;
-            }
-            h3.job:hover + div {
+            .job:hover h3 + div {
                 max-height: 500px;
                 opacity: 1;
             }
-            h3.job:hover b {
+            .job:hover b {
                 transform: rotate(180deg);
                 top:18px;
             }
-            h3.job b {
+            .job b {
                 transition: transform .2s ease-in-out, top .2s ease-in;
                 transform: rotate(0);
                 display: inline-block;
