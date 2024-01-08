@@ -25,14 +25,14 @@ defaults:
     scope:
       path: "php/*"
     values:
-      layout: "page"
+      layout: "pages"
   -
     scope:
-      path: "no-code/*"
+      path: "no-code/"
     values:
-      layout: "page"
+      layout: "pages"
   -
     scope:
       path: "devops/*"
     values:
-      layout: "page"
+      layout: "pages"
