@@ -21,18 +21,3 @@ defaults:
       title: "Mateusz Kimont"
       firstname: "Matt Kimont"
       description: "Full stack web developer - remote, contract, part-hybrid only"
-  -
-    scope:
-      path: "php/*"
-    values:
-      layout: "pages"
-  -
-    scope:
-      path: "no-code/"
-    values:
-      layout: "pages"
-  -
-    scope:
-      path: "devops/"
-    values:
-      layout: "page"
