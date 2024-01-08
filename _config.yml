@@ -33,6 +33,6 @@ defaults:
       layout: "pages"
   -
     scope:
-      path: "devops/*"
+      path: "devops/"
     values:
-      layout: "pages"
+      layout: "page"
