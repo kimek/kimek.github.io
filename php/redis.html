@@ -2,6 +2,7 @@
 layout: "page"
 header:"Redis pitfalls"
 ---
+<pre>
 Pitfalls:
 
 Choose consistent ways to name and prefix your keys. Manage your namespace.
@@ -54,3 +55,4 @@ You are writing an application which uses a set of services. It just so happens 
 There is nothing that Redis offers that you can't accomplish through numerous alternatives. Every feature of Redis can be approximated or provided, to some degree, using an SQL/RDBMS backend if you write the correct sorts of code (possibly including stored procedures, triggers, etc and/or separate daemons) and implement the correct schema to do it.
 
 If you focus on the API that you need to provide to your applications developers than you have some hope of replacing those parts which, inevitably, need to be replaced later (for whatever reason). You also provide considerably more flexibility as you develop additional applications and modules that need to interact with your existing databases.
+</pre>
