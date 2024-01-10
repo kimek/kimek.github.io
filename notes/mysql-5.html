@@ -4,23 +4,25 @@ header: "Mysql 5.7 Notes"
 ---
 <h2></h2>Set collation dynamically
 <pre>
-CREATE PROCEDURE createTableWithDynamicCollation(IN dynamicCollation VARCHAR(255))
-BEGIN
-SET @sql = CONCAT('CREATE TABLE your_table (your_column VARCHAR(255) COLLATE ', dynamicCollation, ');');
+SET @your_variable = 'your_value';
+SET @collation_variable = 'utf8mb4_unicode_ci';
+SET @sql = CONCAT('SELECT * FROM your_table WHERE your_column = ? COLLATE ', @collation_variable);
 PREPARE stmt FROM @sql;
-EXECUTE stmt;
+EXECUTE stmt USING @your_variable;
 DEALLOCATE PREPARE stmt;
-END //
 </pre>
+Set collation for string variable. Terrible hack but do you know better solution ?
 <pre>
-    # @@character_set_database
-    SET @coll = (SELECT COLLATION(column_name) AS column_collation FROM table WHERE column_name = 'column_value' LIMIT 1);
-    SET @newLocation =  CONCAT('location/newImageLocation.jpg', @coll);
+SET @coll = (SELECT COLLATION(column_name) AS column_collation FROM table_name WHERE column_name = 'column_value' LIMIT 1);
+SET @newFileLocation = 'dir/imageName.jpg';
+# need to use string as variable doesnt work as expected
+SET @newLocation = CONCAT('dir/imageName.jpg', @coll);
+SET @newLocation =  SUBSTRING(@newLocation, 1, LENGTH(@newFileLocation));
 </pre>
 
 
 <h3>Split delimited strings</h3>
-Thans to https://blog.fedecarg.com/2014/02/22/mysql-split-string-function/
+Thanks to https://blog.fedecarg.com/2014/02/22/mysql-split-string-function/
 <pre>
 CREATE FUNCTION SPLIT_STR(
   x VARCHAR(255),

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7e227adc-963f-46f5-b8be-5c58bf5f51c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/mysql-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/notes/mysql-5.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,7 @@
       <workItem from="1704706084797" duration="19222000" />
       <workItem from="1704728850021" duration="1953000" />
       <workItem from="1704817633484" duration="27000" />
-      <workItem from="1704892159359" duration="374000" />
+      <workItem from="1704892159359" duration="3516000" />
     </task>
     <servers />
   </component>
