@@ -1,0 +1,38 @@
+---
+layout: "page"
+header: "Mysql 5.7 Notes"
+---
+<h2></h2>Set collation dynamically
+<pre>
+CREATE PROCEDURE createTableWithDynamicCollation(IN dynamicCollation VARCHAR(255))
+BEGIN
+SET @sql = CONCAT('CREATE TABLE your_table (your_column VARCHAR(255) COLLATE ', dynamicCollation, ');');
+PREPARE stmt FROM @sql;
+EXECUTE stmt;
+DEALLOCATE PREPARE stmt;
+END //
+</pre>
+<pre>
+    # @@character_set_database
+    SET @coll = (SELECT COLLATION(column_name) AS column_collation FROM table WHERE column_name = 'column_value' LIMIT 1);
+    SET @newLocation =  CONCAT('location/newImageLocation.jpg', @coll);
+</pre>
+
+
+<h3>Split delimited strings</h3>
+Thans to https://blog.fedecarg.com/2014/02/22/mysql-split-string-function/
+<pre>
+CREATE FUNCTION SPLIT_STR(
+  x VARCHAR(255),
+  delim VARCHAR(12),
+  pos INT
+)
+RETURNS VARCHAR(255)
+RETURN REPLACE(SUBSTRING(SUBSTRING_INDEX(x, delim, pos),
+       LENGTH(SUBSTRING_INDEX(x, delim, pos -1)) + 1),
+       delim, '');
+</pre>
+Usage
+<pre>
+SELECT SPLIT_STR(string, delimiter, position)
+</pre>
