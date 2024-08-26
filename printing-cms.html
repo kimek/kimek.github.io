@@ -1,0 +1,215 @@
+---
+---
+    <style>
+    .wrapper, section {
+    
+    max-width:none;
+    }
+    
+    
+    html {
+        scroll-behavior: smooth !important;
+        }
+        
+        img {
+        width:100%; 
+        }
+        #video-list video {
+            display: block;
+                margin: 0 0 1em;
+            border-image: url(https://billy-gift.co.uk/wp-content/plugins/printman/public/img/modal/border.png) 35 35 35 35 stretch;
+            border-style: solid;
+            border-width: 16px;
+            width: 100% !important;
+            box-sizing: border-box;
+            transform: scale(0.9);
+            transition: transform .2s ease-out;
+                max-width: 790px;
+        }
+
+        #video-list div:target video {
+            transform: scale(1);
+            transition: transform .2s .1s ease-in;
+        }
+        .showcase-list {
+           padding: 0 2em 3em calc(40vw + 2em);
+        }
+        #video-list-index {
+   
+	}
+
+        #video-list-index li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2em;
+        }
+        
+        .video-list-desc {
+          padding:0 0 1em;
+        }
+        .showcase-list h2, #home h1 {
+    padding-top: 120px;
+}
+
+#index {
+position: fixed;
+top:calc(50vh - 160px);
+}
+ol ol {
+    list-style: upper-latin;
+}
+    </style>
+
+<div id=index>
+<h2>Project showcase:</h2>
+<ol>
+<li><a href="#home">Printing CMS</a></li>
+<li><a href="#mug">See Products in action:</a>
+	<ol>
+	    <li><a href="#mug">Mug</a></li>
+	    <li><a href="#teacher">Teacher planner</a></li>
+	    <li><a href="#funny">Quoted notebooks</a></li>
+	    <li><a href="#notebooks">Notebooks</a></li>
+	    <li><a href="#school">School planner</a>
+		    <ol>
+		    	<li><a href="#csv">Batch orders</a></li>
+		    </ol>
+	    </li>
+	    
+	    <li><a href="#alternative">Image to product generator</a></li>
+	</ol>
+	</li>
+<li><a href="#speed">Technical information:</a>
+
+	<ol>
+		<li><a href="#vital-score">Google vital score</a></li>
+		<li><a href="#speed">Speed</a></li>
+	</ol>
+	</li>
+	</ol>
+</div>
+
+<div id="home" class="showcase-list">
+<h1>Crafting Custom Printing Product Solutions</h1>
+<p>I've independently created complex design concepts and transformed them into functional, scalable products for printing company.<p>
+<p>The fruit of my work is versatile product "Printing CMS", which key features are:</p>
+<strong>Rapid Product Creation</strong> <br>
+- 1-click photo to live product<br>
+- 1-click shop with hundreds of new products<br>
+- Native drag-and-drop photo to folder to generate and launch product (no need of web browser)<br>
+<br>
+<strong>Extensive Customization</strong> <br>
+- Wide range of customization options from CMS<br>
+- Add any product ex. pillow or notebook and match to your design<br>
+- Enable company to create new products that align with brand identity.<br>
+<br>
+<strong>Powerful Features:</strong><br>
+- Client's batch processing option to generate multiple products from CSV or XSL.<br>
+- 3D previews to visualize design in realistic 3D previews.<br>
+<br>
+<strong>Seamless Integration</strong><br>
+- Easily integration with wordpress e-commerce platform and porting to other frameworks.<br>
+- Google drive to product sync<br>
+</div>
+
+<div id="video-list" class="showcase-list">
+
+<div id="mug">
+ <h2 >Mug</h2>
+  <div class="video-list-desc">
+	 - Colour variation support<br>
+	 - Fake 3D preview support (touch on mobile supported)<br>
+	 </div>
+<video controls="" width="800" >
+<source src="videos/cup.mp4" type="video/mp4">
+</video>
+</div>
+<div id="teacher">
+ <h2>Teacher planner</h2>
+ <div class="video-list-desc">
+	 - 3D inners preview<br>
+	 - Inners selecion<br>
+	 - A4, B5, A5 size selection<br>
+	 - Colour variation selection
+	 </div>
+    <video controls="" width="800">
+        <source src="videos/teacher.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div id="funny">
+ <h2>Quoted notebooks</h2>
+  <div class="video-list-desc">
+	 - 1-click text list to product generation<br>
+	 - Support of pallet group and colour (pallet child) from csv or cover and text colour<br>
+	 - Smooth preview transition for different product settings<br>
+	 - Full custom quote text feature
+	 - Quick font size change feature
+	 </div>
+    <video controls="" width="800" >
+        <source src="videos/funny.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div id="notebooks">
+ <h2>Notebooks</h2>
+ <div class="video-list-desc">
+	 - Supports paper type<br>
+	 - Rest support same as teacher planner<br>
+	 </div>
+    <video controls="" width="800">
+        <source src="videos/notebook.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div id="school">
+    <h2>School planner</h2>
+	 <div class="video-list-desc">
+	 - Layout variation support for text and photo<br>
+	 - Intuitive crop photo<br>
+	 - Full text support<br>
+	 - Dynamic generated colours for cover and text taken from csv<br>
+	 - Pantone colour for cover support<br>
+	 </div>
+    <video controls="" width="800">
+        <source src="videos/school.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div id="csv">
+    	<h2>Batch orders</h2>
+	 <div class="video-list-desc">
+	 - Supports XLS, XLSX or CSV <br>
+	 - Dynamic feed: column per input text feed - if product have 1 input field popup with concatenate column option is show<br>
+	 - Avoids header row value (by checking common values like name, surname etc.)<br>
+	 - Preview of generated products<br>
+	 </div>
+    <video controls="" width="800">
+        <source src="videos/csv.mp4" type="video/mp4">
+    </video>
+    </div>
+    
+    <div id="alternative">
+ <h2>Image to product generator</h2>
+ <div class="video-list-desc">
+	 - 1-click image to product generation<br>
+	 - Fake 3D photo preview<br>
+	 - Information for product feed from yml for title, tags etc. (yml generated from file name)<br>
+	 </div>
+    <video controls="" width="800">
+        <source src="videos/alternative.mp4" type="video/mp4">
+    </video>
+    </div>
+</div>
+
+<div class="showcase-list">
+	<div id="vital-score">
+		<h2> PageSpeed Insights results </h2>
+		<img src="img/printingcms-vital-score.png">
+	</div>
+
+	<div id="speed">
+		<h2>Technical details</h2><br>
+<p>- Json used for product and design therefore - no heavy DB usage</p>
+<p>- "Long-lived" transient are used in overall all static data for all products - no heavy DB usage</p>
+<p>- Product (mug, notebook, planner) are abstracted from product. Same design. Design can be served for different products</p>
+<p>- Wordpress and Woocommerce was used due to more control, plugins (LightSpeed, wordfence), server support (LightSpeed)+ future development => separate CMS and product to separate sites and use json + js framework in future only</p>
+	</div>
+</div>
+
