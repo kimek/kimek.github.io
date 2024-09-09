@@ -1,0 +1,54 @@
+---
+layout: "page"
+header: "Test - Refactoring lawyer's listing page"
+---
+
+<p>Refactor live site from Vanilla JS to use Vue.js 3.5</p>
+
+
+<p><a href="https://yorkman.co.uk/keystonelaw/vue.html" target="_blank" >Vue project</a></p>
+<p><a href="https://www.keystonelaw.com/lawyers" target="_blank" >Original page</a></p>
+<pre>
+Report details:
+Time taken: 2 days ( 1 days analazing code, css, current issues and prototyping, gathering data ; 2 day implementation and coding )
+Vue version: 3.5
+
+Overall page performance:
+- First page view load 2 times faster than original
+- User to page interaction waiting time decreased 2.5 times.
+- Faster rendering and improved responsiveness.
+- Enhanced the visual appeal and readability for clients 
+
+Technical:
+- Page is using Vue.js 3.5
+- Instant update on search due to loaded all 540 records (in contrary to original page)
+- No page refresh (in contrary to original page)
+- No additional server call (in contrary to original page)
+- "What are you looking for" searching term is based on lawyer name. Extending the option to bio is 1 min job.
+- "What are you looking for" searching term works with alphabetic search term
+-  Alphabetic filter is dynamic, based on 540 records  (in contrary to original page)
+-  Alphabetic filter is multi-choice  (in contrary to original page)
+- Instant update of Result records value
+- Instant hiding Next Page / Previous page if there is only one page
+- Instant disabling Next Page / Previous page if there is no more pages to show (probably I should hide them instead of blocking)
+- Instant hiding pagination on empty results
+- Instant message  "No Lawyers found." on empty results
+- Simple 1 line configuration for: record per page, feed url
+- Placeholder image support (in contrary to original page) (ex. branding logo of KeyStone here)
+- Responsive image support
+- Readable 100 lines of code only 
+- Animation on add/removal when filtering (in contrary to original page) and easy customization
+- No 3rd additional part libraries needed ( only vue, no masonry or  waypoint needed )
+- No waypoint neither calculation of height of dom needed - fast page painting 
+
+Visual:
+- More aesthetic layout 
+- Used native sticky (support since May 2021) and flex (support since May 1998) for layout and fast painting.
+- No height calculation or javascript needed.
+- Responsiveness (works on mobile and desktop)
+- Issue fixed: 
+*height of record 
+*height of filter
+*slow page painting - now is fast and smooth
+</pre>
+
