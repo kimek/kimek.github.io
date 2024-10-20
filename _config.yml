@@ -10,7 +10,7 @@ defaults:
       lang: "en-US"
       title: "Mateusz Kimont"
       firstname: "Matt Kimont"
-      description: "Full-Stack Developer: Delivering High-Performance, Customized Web Solutions"
+      description: "Senior Software Web Developer with 9 years experience.<br>Delivering High-Performance, Customized Web Solutions."
   -
     scope:
       path: "index.html"
@@ -20,4 +20,4 @@ defaults:
       lang: "en-US"
       title: "Mateusz Kimont"
       firstname: "Matt Kimont"
-      description: "Full-Stack Developer: Delivering High-Performance, Customized Web Solutions"
+      description: "Senior Software Web Developer with 9 years experience.<br>Delivering High-Performance, Customized Web Solutions."
