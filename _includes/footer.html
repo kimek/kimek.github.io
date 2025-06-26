@@ -1,0 +1,41 @@
+{% if page.layout == "page" %}
+    <style>
+        .block {
+            border-left: 3px solid #ffcc00;
+            margin: 0;
+            padding: 0 0 0 20px;
+            margin: 0 0 10px;
+        }
+
+        .go-back {
+            position: sticky;
+            background: #262625;
+            bottom: 1em;
+            padding: 1em;
+            border-radius: 3px;
+            border: 1px solid #8f6618;
+            box-shadow: 0 0 6px 4px #171717;
+            display: inline-block;
+            left: 100%;
+            margin: 0 auto;
+        }
+    </style>
+    <a href="/" class="go-back">Go back</a>
+{% else %}
+    <style>
+        li {
+            margin-bottom: 1em; 
+        }
+
+        .block {
+            border-left: 3px solid #ffcc00;
+            margin: 0;
+            padding: 0 0 0 20px;
+            margin: 0 0 10px;
+        }
+    </style>
+{% endif %}
+
+<p>
+    Website using a modified version of the <a href="https://github.com/pages-themes/midnight" target="_blank" rel="noopener noreferrer" style="color: #999;">Midnight theme</a>.
+</p>

@@ -1,0 +1,16 @@
+---
+---
+@import "jekyll-theme-midnight";
+
+section {
+    margin: 0;
+    padding:0;
+}
+
+main.wrapper { 
+    margin-top: 120px;
+}
+
+footer {
+    @extend .wrapper;
+}
