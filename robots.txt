@@ -1,0 +1,6 @@
+# Allow all crawlers to access all content
+User-agent: *
+Disallow:
+
+# Provide the location of the sitemap
+Sitemap: https://kimek.github.io/sitemap.xml
