@@ -9,7 +9,7 @@ defaults:
       languages:  "Languages / Idiomas / Jezyki"
       lang: "en-US"
       title: "Mateusz Kimont"
-      firstname: "Matt Kimont"
+      firstname: "Mateusz Kimont"
       description: "Full-Stack Engineerr"
   -
     scope:
@@ -19,5 +19,5 @@ defaults:
       languages: "Languages / Idiomas / Jezyki"
       lang: "en-US"
       title: "Mateusz Kimont"
-      firstname: "Matt Kimont"
+      firstname: "Mateusz Kimont"
       description: "Full-Stack Engineer"
