@@ -21,3 +21,4 @@ defaults:
       description: "Professional portfolio for Mateusz Kimont, a Principal Full-Stack Engineer with 8+ years of experience in PHP, AWS, and performance optimization. Open for new remote opportunities."
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
