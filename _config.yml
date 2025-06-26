@@ -6,18 +6,16 @@ defaults:
       path: ""
     values:
       layout: "default"
-      languages:  "Languages / Idiomas / Jezyki"
       lang: "en-US"
-      title: "Mateusz Kimont"
-      firstname: "Mateusz Kimont"
-      description: "Full-Stack Engineerr"
+      title: "Mateusz Kimont - Principal Full-Stack Engineer"
+      fullname: "Mateusz Kimont"
+      description: "Full-Stack / Principal Engineer"
   -
     scope:
       path: "index.html"
     values:
       layout: "default"
-      languages: "Languages / Idiomas / Jezyki"
       lang: "en-US"
-      title: "Mateusz Kimont"
-      firstname: "Mateusz Kimont"
-      description: "Full-Stack Engineer"
+      title: "Mateusz Kimont - Principal Full-Stack Engineer"
+      fullname: "Mateusz Kimont"
+      description: "Full-Stack / Principal Engineer"

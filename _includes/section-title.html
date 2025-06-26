@@ -1,15 +1,15 @@
 <section>
     <div id="title">
-        <h1>{{ page.firstname }}</h1>
+        <h1>{{ page.fullname }}</h1>
         <p>{{ page.description }}</p>
         <p><small>Status: Open for new remote opportunities - July 2025</small></p>
         {% if page.layout == "page" %}
             <hr>
                 <p>{{ page.header }}</p>
             <hr>
-        {% else %}
+        {% elsif page.lang == 'en-US' %} 
             <blockquote>"Be careful of extrapolating patterns without proof" - Grant Sanderson</blockquote>
-            <blockquote>"the shoemaker's son always goes barefoot" - mid 16th century English proverbial saying</blockquote>
+            <blockquote>"The shoemaker's son always goes barefoot" - mid 16th century English proverbial saying</blockquote>
         {% endif %}
     </div>
 </section>
