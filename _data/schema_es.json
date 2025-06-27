@@ -1,0 +1,119 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Mateusz Kimont",
+    "jobTitle": "Desarrollador web full stack",
+    "url": "https://kimek.github.io/es/",
+    "image": "https://kimek.github.io/assets/images/mateusz-kimont.png",
+    "email": "mailto:admin@yorkman.co.uk",
+    "knowsLanguage": ["es", "en", "pl"],
+    "sameAs": [
+      "https://www.linkedin.com/in/mkimont/",
+      "https://github.com/kimek",
+      "https://stackoverflow.com/users/3381657/fearis",
+      "https://www.x.com/mkimont/"
+    ],
+    "alumniOf": [
+      {
+        "@type": "Organization",
+        "name": "Grapple",
+        "url": "https://grapple.agency/"
+      },
+      {
+        "@type": "Organization",
+        "name": "We are Marvellous",
+        "url": "https://wearemarvellous.com/"
+      },
+      {
+        "@type": "Organization",
+        "name": "Xanda",
+        "url": "https://www.xanda.net/"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Estudios Universitarios",
+        "description": "Cursé 3.5 años de educación superior a tiempo completo en diversas facultades, incluyendo Filosofía, Ciencias de la Computación y Bellas Artes, lo que proporciona una base única para la resolución creativa de problemas."
+      }
+    ],
+    "award": [
+      "Mención de Honor de Awwwards",
+      "Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3"
+    ],
+    "skills": [
+      "Habilidades en Frontend",
+      "Habilidades en PHP",
+      "DevOps",
+      "Responsabilidades Diarias",
+      "Habilidades Blandas"
+    ],
+    "workExample": [
+      {
+        "@type": "CreativeWork",
+        "name": "BNP Paribas Real Estate",
+        "url": "https://www.realestateforachangingworld.co.uk/"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Ultravilla",
+        "url": "https://www.ultravilla.com"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Luxury flooring (tienda)",
+        "url": "https://luxuryflooring.co.uk/"
+      }
+    ],
+    "seeks": {
+      "@type": "Demand",
+      "description": "Estado: Abierto a nuevas oportunidades remotas - Julio 2025"
+    },
+    "hasOccupation": [
+      {
+        "@type": "Role",
+        "roleName": "Ingeniero Principal",
+        "startDate": "2024",
+        "endDate": "2025",
+        "provider": {
+          "@type": "Organization",
+          "name": "CMO Group"
+        },
+        "description": "En CMO Group impulsé un aumento del doble en el rendimiento de los sitios en producción liderando una revisión completa del stack tecnológico que incluyó la actualización a PHP 8.3, el rediseño de la arquitectura AWS y la optimización de APIs y bases de datos."
+      },
+      {
+        "@type": "Role",
+        "roleName": "Ingeniero de Producto",
+        "startDate": "2021",
+        "endDate": "2024",
+        "provider": {
+          "@type": "Organization",
+          "name": "CharlessWorh Press"
+        },
+        "description": "En CharlessWorh Press lideré el desarrollo de una versátil plataforma CMS que permite la creación de productos personalizados para clientes de e-commerce, más información aquí."
+      },
+      {
+        "@type": "Role",
+        "roleName": "Desarrollador de Software y Analista (Contrato)",
+        "startDate": "2020",
+        "endDate": "2020",
+        "provider": {
+          "@type": "Organization",
+          "name": "RLDatix"
+        },
+        "description": "En RLDatix mejoré el software de misión crítica para el sector de la salud de un proveedor internacional líder con operaciones en Arabia Saudita, Canadá, Australia y el Reino Unido."
+      },
+      {
+        "@type": "Role",
+        "roleName": "Desarrollador Full-Stack Senior",
+        "startDate": "2016",
+        "endDate": "2020",
+        "provider": {
+          "@type": "Organization",
+          "name": "The Insurance Emporium"
+        },
+        "description": "En The Insurance Emporium dirigí el desarrollo full-stack para una importante compañía de seguros del Reino Unido, contribuyendo al lanzamiento de una nueva marca de la empresa y a la retirada estratégica de productos heredados."
+      }
+    ]
+  }
+}

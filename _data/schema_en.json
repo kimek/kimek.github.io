@@ -1,0 +1,119 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Mateusz Kimont",
+    "jobTitle": "Principal Full-Stack Engineer",
+    "url": "https://kimek.github.io/",
+    "image": "https://kimek.github.io/assets/images/mateusz-kimont.png",
+    "email": "mailto:admin@yorkman.co.uk",
+    "knowsLanguage": ["en", "pl", "es"],
+    "sameAs": [
+      "https://www.linkedin.com/in/mkimont/",
+      "https://github.com/kimek",
+      "https://stackoverflow.com/users/3381657/fearis",
+      "https://www.x.com/mkimont/"
+    ],
+    "alumniOf": [
+      {
+        "@type": "Organization",
+        "name": "Grapple",
+        "url": "https://grapple.agency/"
+      },
+      {
+        "@type": "Organization",
+        "name": "We are Marvellous",
+        "url": "https://wearemarvellous.com/"
+      },
+      {
+        "@type": "Organization",
+        "name": "Xanda",
+        "url": "https://www.xanda.net/"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "University Studies",
+        "description": "Pursued 3.5 years of full-time higher education across diverse faculties including Philosophy, Computer Science, and Fine Arts, providing a unique foundation for creative problem-solving."
+      }
+    ],
+    "award": [
+      "Awwwards Honorable Mention",
+      "Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3"
+    ],
+    "skills": [
+      "Frontend Skills",
+      "PHP Skills",
+      "DevOps",
+      "Day-to-day Responsibilities",
+      "Soft Skills"
+    ],
+    "workExample": [
+      {
+        "@type": "CreativeWork",
+        "name": "BNP Paribas Real Estate",
+        "url": "https://www.realestateforachangingworld.co.uk/"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Ultravilla",
+        "url": "https://www.ultravilla.com"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Luxury flooring (tienda)",
+        "url": "https://luxuryflooring.co.uk/"
+      }
+    ],
+    "seeks": {
+      "@type": "Demand",
+      "description": "Status: Open for new remote opportunities - July 2025"
+    },
+    "hasOccupation": [
+      {
+        "@type": "Role",
+        "roleName": "Principal Engineer",
+        "startDate": "2024",
+        "endDate": "2025",
+        "provider": {
+          "@type": "Organization",
+          "name": "CMO Group"
+        },
+        "description": "At CMO Group I drove a 2x performance increase in production sites by leading a full-stack overhaul that included upgrading to PHP 8.3, redesigning the AWS architecture, and optimizing APIs and databases."
+      },
+      {
+        "@type": "Role",
+        "roleName": "Product Engineer",
+        "startDate": "2021",
+        "endDate": "2024",
+        "provider": {
+          "@type": "Organization",
+          "name": "CharlessWorh Press"
+        },
+        "description": "At CharlessWorh Press I spearheaded the development of a versatile CMS platform enabling personalized product creation for e-commerce clients, more here."
+      },
+      {
+        "@type": "Role",
+        "roleName": "Software Developer & Analyst (Contract)",
+        "startDate": "2020",
+        "endDate": "2020",
+        "provider": {
+          "@type": "Organization",
+          "name": "RLDatix"
+        },
+        "description": "At RLDatix I enhanced mission-critical healthcare software for a leading international provider with operations in Saudi Arabia, Canada, Australia, and the UK."
+      },
+      {
+        "@type": "Role",
+        "roleName": "Senior Full-Stack Developer",
+        "startDate": "2016",
+        "endDate": "2020",
+        "provider": {
+          "@type": "Organization",
+          "name": "The Insurance Emporium"
+        },
+        "description": "At The Insurance Emporium I led full-stack development for a major UK insurance company, contributing to the launch of a new company brand and the strategic retirement of legacy products."
+      }
+    ]
+  }
+}

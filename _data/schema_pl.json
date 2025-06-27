@@ -1,0 +1,119 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Mateusz Kimont",
+    "jobTitle": "Principal Full-Stack Inżynier",
+    "url": "https://kimek.github.io/pl/",
+    "image": "https://kimek.github.io/assets/images/mateusz-kimont.png",
+    "email": "mailto:admin@yorkman.co.uk",
+    "knowsLanguage": ["pl", "en", "es"],
+    "sameAs": [
+      "https://www.linkedin.com/in/mkimont/",
+      "https://github.com/kimek",
+      "https://stackoverflow.com/users/3381657/fearis",
+      "https://www.x.com/mkimont/"
+    ],
+    "alumniOf": [
+      {
+        "@type": "Organization",
+        "name": "Grapple",
+        "url": "https://grapple.agency/"
+      },
+      {
+        "@type": "Organization",
+        "name": "We are Marvellous",
+        "url": "https://wearemarvellous.com/"
+      },
+      {
+        "@type": "Organization",
+        "name": "Xanda",
+        "url": "https://www.xanda.net/"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Studia Wyższe",
+        "description": "Studiowałem przez 3,5 roku na studiach stacjonarnych na różnych kierunkach, w tym Filozofii, Informatyce i Sztukach Pięknych, co zapewniło mi unikalne podstawy do kreatywnego rozwiązywania problemów."
+      }
+    ],
+    "award": [
+      "Wyróżnienie Awwwards",
+      "Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3"
+    ],
+    "skills": [
+      "Frontend",
+      "Umiejętności PHP",
+      "DevOps",
+      "Codzienne Obowiązki",
+      "Umiejętności Miękkie"
+    ],
+    "workExample": [
+      {
+        "@type": "CreativeWork",
+        "name": "BNP Paribas Real Estate",
+        "url": "https://www.realestateforachangingworld.co.uk/"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Ultravilla",
+        "url": "https://www.ultravilla.com"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Luxury flooring (tienda)",
+        "url": "https://luxuryflooring.co.uk/"
+      }
+    ],
+    "seeks": {
+      "@type": "Demand",
+      "description": "Status: Otwaty na nowe propozycje pracy - Lipiec 2025"
+    },
+    "hasOccupation": [
+      {
+        "@type": "Role",
+        "roleName": "Principal Engineer",
+        "startDate": "2024",
+        "endDate": "2025",
+        "provider": {
+          "@type": "Organization",
+          "name": "CMO Group"
+        },
+        "description": "W CMO Group przyczyniłem się do dwukrotnego wzrostu wydajności serwisów produkcyjnych, prowadząc pełną modernizację stosu technologicznego, która obejmowała aktualizację do PHP 8.3, przeprojektowanie architektury AWS oraz optymalizację API i baz danych."
+      },
+      {
+        "@type": "Role",
+        "roleName": "Inżynier Produktu",
+        "startDate": "2021",
+        "endDate": "2024",
+        "provider": {
+          "@type": "Organization",
+          "name": "CharlessWorh Press"
+        },
+        "description": "W CharlessWorh Press kierowałem rozwojem wszechstronnej platformy CMS, umożliwiającej tworzenie spersonalizowanych produktów dla klientów e-commerce, więcej tutaj."
+      },
+      {
+        "@type": "Role",
+        "roleName": "Programista i Analityk (Kontrakt)",
+        "startDate": "2020",
+        "endDate": "2020",
+        "provider": {
+          "@type": "Organization",
+          "name": "RLDatix"
+        },
+        "description": "W RLDatix udoskonaliłem kluczowe oprogramowanie dla sektora opieki zdrowotnej dla wiodącego międzynarodowego dostawcy z oddziałami w Arabii Saudyjskiej, Kanadzie, Australii i Wielkiej Brytanii."
+      },
+      {
+        "@type": "Role",
+        "roleName": "Senior Full-Stack Developer",
+        "startDate": "2016",
+        "endDate": "2020",
+        "provider": {
+          "@type": "Organization",
+          "name": "The Insurance Emporium"
+        },
+        "description": "W The Insurance Emporium prowadziłem rozwój full-stack dla dużej brytyjskiej firmy ubezpieczeniowej, przyczyniając się do wprowadzenia nowej marki firmy i strategicznego wycofania starszych produktów."
+      }
+    ]
+  }
+}
