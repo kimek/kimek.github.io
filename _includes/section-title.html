@@ -1,9 +1,13 @@
 <section style="text-align: center;">
-    <img src="/assets/images/mateusz-kimont.png" alt="Mateusz Kimont - Principal Full-Stack Engineer" style="width: 150px; border-radius: 50%;" /><br>
+    <img itemprop="image" src="/assets/images/mateusz-kimont.png" alt="Mateusz Kimont - Principal Full-Stack Engineer" style="width: 150px; border-radius: 50%;" /><br>
     <div id="title">
-        <h1>{{ page.fullname }}</h1>
-        <p>{{ page.jobTitle }}</p>
-        <p><small>Status: Open for new remote opportunities - July 2025</small></p>
+        <h1 itemprop="name">{{ page.fullname }}</h1>
+        <p itemprop="jobTitle">{{ page.jobTitle }}</p>
+         <div itemprop="seeks" itemscope itemtype="https://schema.org/Demand">
+            <p>
+                <small itemprop="description">Status: Open for new remote opportunities - July 2025</small>
+            </p>
+        </div>
         {% if page.layout == "page" %}
             <hr>
                 <p>{{ page.header }}</p>
