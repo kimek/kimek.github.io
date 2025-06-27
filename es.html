@@ -31,7 +31,7 @@ lang: es
 <section style="margin-bottom: 4rem;">
     <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">Experiencia de Nivel Senior (8+ años)</h2>
     <div class="posts">
-         {% for job in site.data.experience %}
+         {% for job in site.data.experience_es %}
             <article itemprop="hasOccupation" itemscope itemtype="https://schema.org/Role" style="margin-bottom: 2rem;">
                 <meta itemprop="startDate" content="{{ job.start_date }}">
                 <meta itemprop="endDate" content="{{ job.end_date }}">
@@ -47,7 +47,7 @@ lang: es
 
 <section style="margin-bottom: 4rem;">
     <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">Experiencia en Agencias Digitales (2+ años)</h2>
-    <p style="text-align: center;">Entregué sitios web y soluciones "pixel-perfect" para una diversa cartera de clientes mientras trabajaba en agencias digitales de primer nivel.</p>
+    <p>Entregué sitios web y soluciones "pixel-perfect" para una diversa cartera de clientes mientras trabajaba en agencias digitales de primer nivel.</p>
     <p style="text-align: center; font-weight: bold; margin-bottom: 2rem;">
         <a href="https://grapple.agency/" target="_blank">Grapple</a> | 
         <a href="https://wearemarvellous.com/" target="_blank">We are Marvellous</a> | 
@@ -61,7 +61,7 @@ lang: es
 
 <section style="margin-bottom: 4rem; text-align: center;">
     <h2 style="font-size: 2em; margin-bottom: 2rem;">Análisis Detallado y Habilidades Técnicas</h2>
-    <p>
+    <p class="fsr">
         <a href="/frontend/">Habilidades en Frontend</a> |
         <a href="/php/">Habilidades en PHP</a> |
         <a href="/devops/">DevOps</a> |
@@ -73,14 +73,14 @@ lang: es
 <section style="margin-bottom: 4rem;">
    <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">Premios y Educación</h2>
     <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-        <div style="flex: 1; min-width: 280px; padding: 1rem;">
+        <div style="flex: 1; min-width: 280px;">
             <h3 style="font-size: 1.25em;">Premios y Certificaciones</h3>
             <ul>
                 <li><a href="https://www.awwwards.com/sites/zerodegrees-bar-restaurant-microbrewery" target="_blank">Mención de Honor de Awwwards</a></li>
                 <li><a href="/microsoft_specialist_programming_in_html5_with_javascript_and_css3.pdf" target="_blank">Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3</a></li>
             </ul>
         </div>
-        <div style="flex: 1; min-width: 280px; padding: 1rem;" itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity">
+        <div style="flex: 1; min-width: 280px;" itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity">
              <h3 style="font-size: 1.25em;" itemprop="name">Estudios Universitarios</h3>
              <p>Cursé 3.5 años de educación superior a tiempo completo en diversas facultades, incluyendo Filosofía, Ciencias de la Computación y Bellas Artes, lo que proporciona una base única para la resolución creativa de problemas.</p>
         </div>
@@ -88,6 +88,6 @@ lang: es
 </section>
 
 <section style="margin-bottom: 4rem;">
-    <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">Contacto y Perfiles Profesionales</h2>
+    <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">Contacto y Perfiles</h2>
     {% include section-contact.html %}
 </section>
