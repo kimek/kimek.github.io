@@ -2,6 +2,8 @@ theme: jekyll-theme-midnight
 show_downloads: false
 languages: ["en", "pl", "es"]
 default_lang: "en"
+seo:
+  json_ld: false
 defaults:
   -
     scope:

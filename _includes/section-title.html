@@ -2,17 +2,17 @@
     <img itemprop="image" src="/assets/images/mateusz-kimont.png" alt="Mateusz Kimont - Principal Full-Stack Engineer" style="width: 150px; border-radius: 50%;" /><br>
     <div id="title">
         <h1 itemprop="name">{{ page.fullname }}</h1>
-        <p itemprop="jobTitle">{{ page.jobTitle }}</p>
+        <p itemprop="jobTitle">{{ t.job_title }}</p>
          <div itemprop="seeks" itemscope itemtype="https://schema.org/Demand">
             <p>
-                <small itemprop="description">Status: Open for new remote opportunities - July 2025</small>
+                <small itemprop="description">{{ t.job_seeking_status }}</small>
             </p>
         </div>
         {% if page.layout == "page" %}
             <hr>
                 <p>{{ page.header }}</p>
             <hr>
-        {% elsif page.lang == 'en-US' %} 
+        {% elsif page.lang == 'en' %}
             <blockquote>"Be careful of extrapolating patterns without proof" - Grant Sanderson</blockquote>
         {% endif %}
     </div>

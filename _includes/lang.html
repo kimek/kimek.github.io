@@ -4,10 +4,6 @@
 
 <nav>
     <ul>
-        {%- comment -%}
-          Finds all pages that use the 'home' layout.
-          This assumes you have one for each language.
-        {%- endcomment -%}
         {%- assign lang_pages = site.pages | where_exp: "item", "item.layout == 'home'" -%}
 
         {% for p in lang_pages %}
