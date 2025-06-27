@@ -2,136 +2,8 @@
 layout: "page"
 header: "Printing project showcase"
 ---
-<style>
-    html {
-        scroll-behavior: smooth !important;
-    }
 
-    img {
-        width: 100%;
-    }
-
-    video {
-        display: block;
-        margin: 0 0 1em;
-        border-image: url(https://billy-gift.co.uk/wp-content/plugins/printman/public/img/modal/border.png) 35 35 35 35 stretch;
-        border-style: solid;
-        border-width: 16px;
-        width: 100% !important;
-        box-sizing: border-box;
-        transform: scale(0.9);
-        transition: transform .2s ease-out;
-        max-width: 790px;
-    }
-
-    div:target video {
-        transform: scale(1);
-        transition: transform .2s .1s ease-in;
-    }
-
-    .wrapper, section {
-        max-width: none;
-    }
-
-    .showcase-list {
-        white-space: pre-line;
-        line-height: 2em;
-    }
-
-    #video-list-index li a {
-        text-decoration: none;
-        color: #000;
-        font-size: 1.2em;
-    }
-
-    .video-list-desc {
-        padding: 0 0 1em;
-    }
-
-    ol ol {
-        list-style: upper-latin;
-        margin: 0;
-        padding: 10px 0 0 20px;
-    }
-
-    #nav-index {
-        position:fixed;
-        bottom: -2px;
-        right: 1em;
-        padding: 1em;
-        background: #2a2a2a;
-        border: 2px solid #434343;
-    }
-
-    #nav-index span {
-        width: 0ch;
-        overflow: hidden;
-        display: inline-block;
-        vertical-align: text-bottom;
-        transition: width .2s;
-    }
-
-    #nav-index:hover span {
-        width:7ch;
-    }
-
-    @media all and (min-width:767px) {
-
-        #index {
-            position: fixed;
-        }
-
-        .showcase-list {
-            padding: 0 2em 3em calc(40vw + 2em);
-        }
-
-        .showcase-list h2, #home h1 {
-            padding-top: 120px;
-        }
-
-    }
-
-    @media all and (max-width:766px) {
-
-        .showcase-list h2, #home h1 {
-            padding-top: 80px;
-            border-top: 3px solid #0000002b;
-        }
-
-    }
-</style>
-<section>
-    <h2>Basic concepts:</h2>
-    <p>Image to product</p>
-
-    <p>Text to product</p>
-
-    <p>Variation and automation</p>
-    <h2>Project showcase:</h2>
-    <ol>
-        <li><a href="#home">Printing CMS</a></li>
-        <li><a href="#mug">See Products in action:</a>
-            <ol>
-                <li><a href="#mug">Mug</a></li>
-                <li><a href="#card">Card</a></li>
-                <li><a href="#teacher">Teacher planner</a></li>
-                <li><a href="#funny">Quoted notebooks</a></li>
-                <li><a href="#notebooks">Notebooks</a></li>
-                <li><a href="#school">School planner</a>
-                    <ol>
-                        <li><a href="#csv">Batch orders</a></li>
-                    </ol>
-                </li>
-
-                <li><a href="#alternative">Image to product generator</a></li>
-            </ol>
-        </li>
-        <li><a href="#google-report">Efficiency - Google speed report</a></li>
-        <li><a href="#technical-details">Technical information</a></li>
-    </ol>
-</div>
-
-<div class="showcase-list">
+<section style="white-space: pre-line;">
     <h1 id="home">Crafting Custom Printing Product Solutions</h1>
     I've independently created complex design concepts and transformed them into functional, scalable products for
         printing company.
@@ -162,7 +34,52 @@ header: "Printing project showcase"
     <strong>Seamless Integration</strong>
     - Easily integration with wordpress e-commerce platform and porting to other frameworks.
     - Google drive to product sync
+    
 
+</section>
+<section>
+
+    <h2>Basic concepts:</h2>
+    <p>
+        Image to product (preview generation, mockup generation, pdf with customized text generation)
+        <img src="/projects/printing-cms/img-2-print.jpg">
+    </p>
+    <p>
+        Text to product (preview generation, mockup generation, pdf with customized text generation)
+        <img src="/projects/printing-cms/text-2-print.jpg">
+    </p>
+        
+    <p>Variation and batch automation included for the aboves</p>
+</section>
+
+<div class="showcase-wrapper">
+    <aside class="showcase-nav">
+        <h2>Project showcase:</h2>
+        <ol>
+            <li><a href="#home">Printing CMS</a></li>
+            <li><a href="#mug">See Products in action:</a>
+                <ol>
+                    <li><a href="#mug">Mug</a></li>
+                    <li><a href="#card">Card</a></li>
+                    <li><a href="#teacher">Teacher planner</a></li>
+                    <li><a href="#funny">Quoted notebooks</a></li>
+                    <li><a href="#notebooks">Notebooks</a></li>
+                    <li><a href="#school">School planner</a>
+                        <ol>
+                            <li><a href="#csv">Batch orders</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="#alternative">Image to product generator</a></li>
+                </ol>
+            </li>
+            <li><a href="#google-report">Efficiency - Google speed report</a></li>
+            <li><a href="#technical-details">Technical information</a></li>
+        </ol>
+    </aside>
+    
+
+    <div class="showcase-list">
     <div id="mug">
         <h2>Mug</h2>
         <div class="video-list-desc">
@@ -258,27 +175,27 @@ header: "Printing project showcase"
         </video>
     </div>
 
-	<div id="google-report">
-		<h2>Efficiency - Google speed report</h2>
-		Desktop without 3rd party vendors, no CloudFlare, AWS acc, extra image compression: 0.3s FCP | 0.8s LCP | 1.0 SI
-		<img src="img/printingcms-vital-score-2.png">
-		Desktop with 3rd party vendors, extra image compression, cloud caching:
-		<img src="img/printingcms-vital-score.png">
+    <div id="google-report">
+        <h2>Efficiency - Google speed report</h2>
+        Desktop without 3rd party vendors, no CloudFlare, AWS acc, extra image compression: 0.3s FCP | 0.8s LCP | 1.0 SI
+        <img src="/assets/images/printingcms-vital-score-2.png">
+        Desktop with 3rd party vendors, extra image compression, cloud caching:
+        <img src="/assets/images/printingcms-vital-score.png">
 
-	</div>
+    </div>
 
-	<div id="technical-details">
-		<h3>Technical information</h3>
-		- Abstraction of extra product data (json)
-		- DB optimization with json and transient
-		- Form inheritance
-		- Form and design abstraction from product
+    <div id="technical-details">
+        <h2>Technical information</h2>
+        - Abstraction of extra product data (json)
+        - DB optimization with json and transient
+        - Form inheritance
+        - Form and design abstraction from product
         - AWS SDK and Google Api as SaaS used
-		- WordPress and Woocommerce was used due to
-		* speed prototyping, better control
-		* server support (LightSpeed, Cloud caching)
-		* plug-ins (LightSpeed, Wordfence)
-		* future development => headless WordPress
+        - WordPress and Woocommerce was used due to
+        * speed prototyping, better control
+        * server support (LightSpeed, Cloud caching)
+        * plug-ins (LightSpeed, Wordfence)
+        * future development => headless WordPress
 
         Below you can find explanation of the above "technical information" in more wast-my-time manner:
         Abstraction for Enhanced Flexibility and Scalability
@@ -302,8 +219,118 @@ header: "Printing project showcase"
         Plugin Ecosystem: Access to a vast library of plugins for added functionality and customization.
         Future-Proofing: The potential to transition to a headless WordPress architecture for enhanced flexibility and decoupled frontend development.
         By combining these strategies, we were able to create a scalable, maintainable, and highly customizable product development platform.
-	</div>
+    </div>
 
 </div>
+</div>
+
+</div>
+
+
 <a href="#index" id="nav-index">&#9776; <span>Index</span> </a>
 
+<style>
+    html {
+        scroll-behavior: smooth !important;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    video {
+        display: block;
+        margin: 0 0 1em;
+        border-image: url(https://billy-gift.co.uk/wp-content/plugins/printman/public/img/modal/border.png) 35 35 35 35 stretch;
+        border-style: solid;
+        border-width: 16px;
+        width: 100% !important;
+        box-sizing: border-box;
+        transform: scale(0.9);
+        transition: transform .2s ease-out;
+        max-width: 790px;
+    }
+
+    div:target video {
+        transform: scale(1);
+        transition: transform .2s .1s ease-in;
+    }
+
+    section {
+        max-width: none;
+    }
+
+    .showcase-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .showcase-nav {
+        width: 100%;
+    }
+
+    @media all and (min-width: 950px) {
+        .showcase-wrapper {
+            margin-left: -150px;
+            margin-right: -150px;
+        }
+        .showcase-nav {
+            flex-basis: 300px; 
+            position: sticky;
+            top: 80px; 
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #c8e6c9;
+        }
+    }
+
+    .showcase-list {
+        flex: 1; 
+    }
+
+    .showcase-list h2 {
+        padding-top: 3em;
+    }
+
+    .showcase-list div {
+        white-space: pre-line;
+    }
+
+    #video-list-index li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.2em;
+    }
+
+    .video-list-desc {
+        padding: 0 0 1em;
+    }
+
+    ol ol {
+        list-style: upper-latin;
+    }
+
+    #nav-index {
+        position:fixed;
+        bottom: -2px;
+        right: 1em;
+        padding: 1em;
+        background: #2a2a2a;
+        border: 2px solid #434343;
+    }
+
+    #nav-index span {
+        width: 0ch;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: text-bottom;
+        transition: width .2s;
+    }
+
+    #nav-index:hover span {
+        width:7ch;
+    }
+
+</style>
