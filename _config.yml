@@ -8,6 +8,7 @@ defaults:
       layout: "default"
       lang: "en-US"
       title: "Mateusz Kimont - Principal Full-Stack Engineer"
+      jobTitle: "Principal Full-Stack Engineer"
       fullname: "Mateusz Kimont"
       description: "Professional portfolio for Mateusz Kimont, a Principal Full-Stack Engineer with 8+ years of experience in PHP, AWS, and performance optimization. Open for new remote opportunities."
   -
@@ -17,6 +18,7 @@ defaults:
       layout: "default"
       lang: "en-US"
       title: "Mateusz Kimont - Principal Full-Stack Engineer"
+      jobTitle: "Principal Full-Stack Engineer"
       fullname: "Mateusz Kimont"
       description: "Professional portfolio for Mateusz Kimont, a Principal Full-Stack Engineer with 8+ years of experience in PHP, AWS, and performance optimization. Open for new remote opportunities."
 plugins:

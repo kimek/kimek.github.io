@@ -35,6 +35,45 @@
         }
     </style>
 {% endif %}
+<style>
+    .employment-data {
+        font-size: 0.9em; 
+        opacity: 0.7; 
+        font-family: monospace;
+        margin-top: 0.5em;
+    }
+
+    blockquote {
+        border:0;
+    }
+
+    @media (min-width: 601px) {
+        .employment-data {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    @media (max-width: 600px) {
+      .break-before-paren::before {
+        content: "\A";
+        white-space: pre;
+      }
+      .employment-data {
+        font-size: 0.6em;
+        margin: 0;
+      }
+      .hide-mobile {
+        display: none;
+      }
+      .fsr {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+</style>
 
 <p>
     Website using a modified version of the <a href="https://github.com/pages-themes/midnight" target="_blank" rel="noopener noreferrer" style="color: #999;">Midnight theme</a>.
@@ -53,6 +92,52 @@
       "https://github.com/kimek",
       "https://stackoverflow.com/users/3381657/fearis",
       "https://www.x.com/mkimont/"
+    ],
+    "hasOccupation": [
+      {
+        "@type": "Role",
+        "roleName": "Principal Engineer",
+        "startDate": "2024",
+        "endDate": "2025",
+        "description": "Drove a 2x performance increase in production sites by leading a full-stack overhaul that included upgrading to PHP 8.3, redesigning the AWS architecture, and optimizing APIs and databases.",
+        "provider": {
+          "@type": "Organization",
+          "name": "CMO Group"
+        }
+      },
+      {
+        "@type": "Role",
+        "roleName": "Product Engineer",
+        "startDate": "2021",
+        "endDate": "2024",
+        "description": "Spearheaded the development of a versatile CMS platform enabling personalized product creation for e-commerce clients, more here.",
+        "provider": {
+          "@type": "Organization",
+          "name": "CharlessWorh Press"
+        }
+      },
+      {
+        "@type": "Role",
+        "roleName": "Software Developer & Analyst (Contract)",
+        "startDate": "2020",
+        "endDate": "2020",
+        "description": "Enhanced mission-critical healthcare software for a leading international provider with operations in Saudi Arabia, Canada, Australia, and the UK.",
+        "provider": {
+          "@type": "Organization",
+          "name": "RLDatix"
+        }
+      },
+      {
+        "@type": "Role",
+        "roleName": "Senior Full-Stack Developer",
+        "startDate": "2016",
+        "endDate": "2020",
+        "description": "Led full-stack development for a major UK insurance company, contributing to the launch of a new company brand and the strategic retirement of legacy products.",
+        "provider": {
+          "@type": "Organization",
+          "name": "The Insurance Emporium"
+        }
+      }
     ]
   }
 }

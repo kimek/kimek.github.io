@@ -24,38 +24,26 @@
     </ul>
 </section>
 
-<section style="margin-bottom: 4rem;">
-    <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">Senior-Level Experience (8+ years)</h2>
-    <div class="posts">
-         <article itemscope itemtype="https://schema.org/JobPosting" style="margin-bottom: 2rem;">
-            <p style="font-size: 0.9em; opacity: 0.7; font-family: monospace;position: absolute;right: 0;margin-top: 0.5em;" itemprop="datePosted">2024 - 2025 (7 months)</p>
-            <h3 style="font-size: 1.25em;" itemprop="title">Principal Engineer</h3>
-            <p style="margin-top: 0.5rem;" itemprop="description">At <span style="font-weight: bold;" itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">CMO Group</span></span> I drove a 2x performance increase in production sites by leading a full-stack overhaul that included upgrading to PHP 8.3, redesigning the AWS architecture, and optimizing APIs and databases.</p>
-        </article>
-
-        <article itemscope itemtype="https://schema.org/JobPosting" style="margin-bottom: 2rem;">
-            <p style="font-size: 0.9em; opacity: 0.7; font-family: monospace;position: absolute;right: 0;margin-top: 0.5em;" itemprop="datePosted">2021 - 2024 (3 years)</p>
-            <h3 style="font-size: 1.25em;" itemprop="title">Product Engineer</h3>
-            <p style="margin-top: 0.5rem;" itemprop="description">At <span style="font-weight: bold;" itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">CharlessWorh Press</span></span> I spearheaded the development of a versatile CMS platform enabling personalized product creation for e-commerce clients, more <a href="/printing-cms" target="_self">here</a>.</p>
-        </article>
-
-        <article itemscope itemtype="https://schema.org/JobPosting" style="margin-bottom: 2rem;">
-            <p style="font-size: 0.9em; opacity: 0.7; font-family: monospace;position: absolute;right: 0;margin-top: 0.5em;" itemprop="datePosted">2020 (4 months)</p>
-            <h3 style="font-size: 1.25em;" itemprop="title">Software Developer & Analyst (Contract)</h3>
-            <p style="margin-top: 0.5rem;" itemprop="description">At <span style="font-weight: bold;" itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">RLDatix</span></span> I enhanced mission-critical healthcare software for a leading international provider with operations in Saudi Arabia, Canada, Australia, and the UK.</p>
-        </article>
-        
-        <article itemscope itemtype="https://schema.org/JobPosting" style="margin-bottom: 2rem;">
-            <p style="font-size: 0.9em; opacity: 0.7; font-family: monospace;position: absolute;right: 0;margin-top: 0.5em;" itemprop="datePosted">2016 - 2020 (4 years)</p>
-            <h3 style="font-size: 1.25em;" itemprop="title">Senior Full-Stack Developer</h3>
-            <p style="margin-top: 0.5rem;" itemprop="description">At <span style="font-weight: bold;" itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">The Insurance Emporium</span></span> I led full-stack development for a major UK insurance company, contributing to the launch of a new company brand and the strategic retirement of legacy products.</p>
-        </article>
-    </div>
-</section>
+    <section style="margin-bottom: 4rem;">
+        <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">Senior-Level Experience <span class="break-before-paren">(8+ years)</span></h2>
+        <div class="posts">
+           {% for job in site.data.experience %}
+                <article itemprop="hasOccupation" itemscope itemtype="https://schema.org/Role" style="margin-bottom: 2rem;">
+                    <meta itemprop="startDate" content="{{ job.start_date }}">
+                    <meta itemprop="endDate" content="{{ job.end_date }}">
+                    <p class="employment-data">{{ job.dates_display }}</p>
+                    <h3 style="font-size: 1.25em;" itemprop="roleName">{{ job.title }}</h3>
+                    <p style="margin-top: 0.5rem;" itemprop="description">
+                      {{ job.description }}
+                    </p>
+                </article>
+            {% endfor %}
+        </div>
+    </section>
 
 <section style="margin-bottom: 4rem;">
-    <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">Digital Agency Experience (2+ years)</h2>
-    <p style="text-align: center;">Delivered pixel-perfect websites and solutions for a diverse client portfolio while at top digital agencies.</p>
+    <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">Digital Agency Experience <span class="break-before-paren">(2+ years)</span></h2>
+    <p>Delivered pixel-perfect websites and solutions for a diverse client portfolio while at top digital agencies.</p>
     <p style="text-align: center; font-weight: bold; margin-bottom: 2rem;">
         <a href="https://grapple.agency/" target="_blank">Grapple</a> | 
         <a href="https://wearemarvellous.com/" target="_blank">We are Marvellous</a> | 
@@ -68,8 +56,8 @@
 </section>
 
 <section style="margin-bottom: 4rem; text-align: center;">
-    <h2 style="font-size: 2em; margin-bottom: 2rem;">Drilldown &amp; Technical Skills</h2>
-    <p>
+    <h2 style="font-size: 2em; margin-bottom: 2rem;">Drilldown &amp; <span class="hide-mobile">Technical</span> Skills</h2>
+    <p class="fsr">
         <a href="/frontend/">Frontend Skills</a> |
         <a href="/php/">PHP Skills</a> |
         <a href="/devops/">DevOps</a> |
@@ -81,14 +69,14 @@
 <section style="margin-bottom: 4rem;">
    <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">Awards &amp; Education</h2>
     <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-        <div style="flex: 1; min-width: 280px; padding: 1rem;">
+        <div style="flex: 1; min-width: 280px;">
             <h3 style="font-size: 1.25em;">Awards &amp; Certifications</h3>
             <ul>
                 <li><a href="https://www.awwwards.com/sites/zerodegrees-bar-restaurant-microbrewery" target="_blank">Awwwards Honorable Mention</a></li>
                 <li><a href="/microsoft_specialist_programming_in_html5_with_javascript_and_css3.pdf" target="_blank">Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3</a></li>
             </ul>
         </div>
-        <div style="flex: 1; min-width: 280px; padding: 1rem;" itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity">
+        <div style="flex: 1; min-width: 280px;" itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity">
              <h3 style="font-size: 1.25em;" itemprop="name">University Studies</h3>
              <p>Pursued 3.5 years of full-time higher education across diverse faculties including Philosophy, Computer Science, and Fine Arts, providing a unique foundation for creative problem-solving.</p>
         </div>
@@ -96,6 +84,6 @@
 </section>
 
 <section style="margin-bottom: 4rem;">
-    <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">Contact &amp; Professional Profiles</h2>
+    <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">Contact &amp; Social Profiles</h2>
     {% include section-contact.html %}
 </section>

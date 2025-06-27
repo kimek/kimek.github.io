@@ -1,0 +1,31 @@
+- start_date: "2024"
+  end_date: "2025"
+  dates_display: "2024 - 2025 (7 meses)"
+  title: "Ingeniero Principal"
+  company: "CMO Group"
+  description: |
+    En <span style="font-weight: bold;">CMO Group</span> impulsé un aumento del doble en el rendimiento de los sitios en producción liderando una revisión completa del stack tecnológico que incluyó la actualización a PHP 8.3, el rediseño de la arquitectura AWS y la optimización de APIs y bases de datos.
+
+- start_date: "2021"
+  end_date: "2024"
+  dates_display: "2021 - 2024 (3 años)"
+  title: "Ingeniero de Producto"
+  company: "CharlessWorh Press"
+  description: |
+    En <span style="font-weight: bold;">CharlessWorh Press</span> lideré el desarrollo de una versátil plataforma CMS que permite la creación de productos personalizados para clientes de e-commerce, más información <a href="/printing-cms" target="_self">aquí</a>.
+
+- start_date: "2020"
+  end_date: "2020"
+  dates_display: "2020 (4 meses)"
+  title: "Desarrollador de Software y Analista (Contrato)"
+  company: "RLDatix"
+  description: |
+    En <span style="font-weight: bold;">RLDatix</span> mejoré el software de misión crítica para el sector de la salud de un proveedor internacional líder con operaciones en Arabia Saudita, Canadá, Australia y el Reino Unido.
+
+- start_date: "2016"
+  end_date: "2020"
+  dates_display: "2016 - 2020 (4 años)"
+  title: "Desarrollador Full-Stack Senior"
+  company: "The Insurance Emporium"
+  description: |
+    En <span style="font-weight: bold;">The Insurance Emporium</span> dirigí el desarrollo full-stack para una importante compañía de seguros del Reino Unido, contribuyendo al lanzamiento de una nueva marca de la empresa y a la retirada estratégica de productos heredados.

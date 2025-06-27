@@ -1,6 +1,7 @@
 ---
 title: "Mateusz Kimont - Espanol version"
-description: "Desarrollador web full stack - remoto solo para alquiler"
+jobTitle: "Desarrollador web full stack - remoto solo para alquiler"
+description: "Portafolio profesional de Mateusz Kimont, Ingeniero Full-Stack Principal con más de 8 años de experiencia en PHP, AWS y optimización del rendimiento. Abierto a nuevas oportunidades de trabajo remoto."
 lang: es
 ---
 <section style="margin-bottom: 4rem;">
@@ -30,29 +31,17 @@ lang: es
 <section style="margin-bottom: 4rem;">
     <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">Experiencia de Nivel Senior (8+ años)</h2>
     <div class="posts">
-         <article itemscope itemtype="https://schema.org/JobPosting" style="margin-bottom: 2rem;">
-            <p style="font-size: 0.9em; opacity: 0.7; font-family: monospace;position: absolute;right: 0;margin-top: 0.5em;" itemprop="datePosted">2024 - 2025 (7 meses)</p>
-            <h3 style="font-size: 1.25em;" itemprop="title">Ingeniero Principal</h3>
-            <p style="margin-top: 0.5rem;" itemprop="description">En <span style="font-weight: bold;" itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">CMO Group</span></span>, impulsé un aumento de 2x en el rendimiento de los sitios en producción al liderar una revisión full-stack que incluyó la actualización a PHP 8.3, el rediseño de la arquitectura AWS y la optimización de APIs y bases de datos.</p>
-        </article>
-
-        <article itemscope itemtype="https://schema.org/JobPosting" style="margin-bottom: 2rem;">
-            <p style="font-size: 0.9em; opacity: 0.7; font-family: monospace;position: absolute;right: 0;margin-top: 0.5em;" itemprop="datePosted">2021 - 2024 (3 años)</p>
-            <h3 style="font-size: 1.25em;" itemprop="title">Ingeniero de Producto</h3>
-            <p style="margin-top: 0.5rem;" itemprop="description">En <span style="font-weight: bold;" itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">CharlessWorh Press</span></span>, lideré el desarrollo de una plataforma CMS versátil que permite la creación de productos personalizados para clientes de e-commerce, más <a href="/printing-cms" target="_self">aquí</a>.</p>
-        </article>
-
-        <article itemscope itemtype="https://schema.org/JobPosting" style="margin-bottom: 2rem;">
-            <p style="font-size: 0.9em; opacity: 0.7; font-family: monospace;position: absolute;right: 0;margin-top: 0.5em;" itemprop="datePosted">2020 (4 meses)</p>
-            <h3 style="font-size: 1.25em;" itemprop="title">Desarrollador de Software y Analista (Contrato)</h3>
-            <p style="margin-top: 0.5rem;" itemprop="description">En <span style="font-weight: bold;" itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">RLDatix</span></span>, mejoré software de salud de misión crítica para un proveedor internacional líder con operaciones en Arabia Saudita, Canadá, Australia y el Reino Unido.</p>
-        </article>
-        
-        <article itemscope itemtype="https://schema.org/JobPosting" style="margin-bottom: 2rem;">
-            <p style="font-size: 0.9em; opacity: 0.7; font-family: monospace;position: absolute;right: 0;margin-top: 0.5em;" itemprop="datePosted">2016 - 2020 (4 años)</p>
-            <h3 style="font-size: 1.25em;" itemprop="title">Desarrollador Full-Stack Senior</h3>
-            <p style="margin-top: 0.5rem;" itemprop="description">En <span style="font-weight: bold;" itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">The Insurance Emporium</span></span>, lideré el desarrollo full-stack para una importante compañía de seguros del Reino Unido, contribuyendo al lanzamiento de una nueva marca de la empresa y al retiro estratégico de productos heredados.</p>
-        </article>
+         {% for job in site.data.experience %}
+            <article itemprop="hasOccupation" itemscope itemtype="https://schema.org/Role" style="margin-bottom: 2rem;">
+                <meta itemprop="startDate" content="{{ job.start_date }}">
+                <meta itemprop="endDate" content="{{ job.end_date }}">
+                <p class="employment-data">{{ job.dates_display }}</p>
+                <h3 style="font-size: 1.25em;" itemprop="roleName">{{ job.title }}</h3>
+                <p style="margin-top: 0.5rem;" itemprop="description">
+                  {{ job.description }}
+                </p>
+            </article>
+        {% endfor %}
     </div>
 </section>
 
