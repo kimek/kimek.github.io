@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="{{ page.lang }}">
 {% include head.html %}
-<body>
+<body itemscope itemtype="https://schema.org/Person">
+    {%- assign t = site.data[page.lang] -%}
+    {%- assign experience_data = site.data[page.experience_file] -%}
+    {%- assign achievements_data = site.data[page.achievements_file] -%}
     {% include header.html %}
     <main class="wrapper">
         {% include section-title.html %}

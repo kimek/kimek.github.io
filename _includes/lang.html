@@ -1,7 +1,17 @@
 <nav>
     <ul>
-        <li class="downloads"><a rel="alternate" hreflang="pl" href="/pl">PL</a></li>
-        <li class="downloads"><a rel="alternate" hreflang="es" href="/es">ES</a></li>
-        <li class="downloads"><a rel="alternate" hreflang="en" href="/">EN</a></li>
+        {%- comment -%}
+          Finds all pages that use the 'home' layout.
+          This assumes you have one for each language.
+        {%- endcomment -%}
+        {%- assign lang_pages = site.pages | where_exp: "item", "item.layout == 'home'" -%}
+
+        {% for p in lang_pages %}
+            <li class="downloads {% if p.lang == page.lang %}active{% endif %}">
+              <a rel="alternate" hreflang="{{ p.lang }}" href="{{ p.url | relative_url }}">
+                {{ p.lang | upcase }}
+              </a>
+            </li>
+        {% endfor %}
     </ul>
 </nav>

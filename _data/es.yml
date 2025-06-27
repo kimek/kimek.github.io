@@ -1,0 +1,33 @@
+# Metadatos de la página
+page_title: "Mateusz Kimont - Versión en Español"
+job_title: "Desarrollador web full stack - solo para contratación remota"
+description: "Portafolio profesional de Mateusz Kimont, Ingeniero Full-Stack Principal con más de 8 años de experiencia en PHP, AWS y optimización del rendimiento. Abierto a nuevas oportunidades de trabajo remoto."
+
+# Títulos de las secciones
+achievements_title: "Logros Clave"
+experience_title: "Experiencia de Nivel Senior (8+ años)"
+agency_title: "Experiencia en Agencias Digitales (2+ años)"
+skills_title: "Análisis Detallado y Habilidades Técnicas"
+education_title: "Premios y Educación"
+contact_title: "Contacto y Perfiles"
+
+# Sección de Agencias
+agency_description: "Entregué sitios web y soluciones \"pixel-perfect\" para una diversa cartera de clientes mientras trabajaba en agencias digitales de primer nivel."
+agency_projects_title: "Proyectos de Clientes Seleccionados:"
+
+# Sección de Habilidades
+skill_frontend: "Habilidades en Frontend"
+skill_php: "Habilidades en PHP"
+skill_devops: "DevOps"
+skill_responsibilities: "Responsabilidades Diarias"
+skill_soft: "Habilidades Blandas"
+
+# Sección de Premios y Educación
+awards_subtitle: "Premios y Certificaciones"
+award_1: "Mención de Honor de Awwwards"
+award_2: "Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3"
+education_subtitle: "Estudios Universitarios"
+education_description: |
+  Cursé 3.5 años de educación superior a tiempo completo en diversas facultades, 
+  incluyendo Filosofía, Ciencias de la Computación y Bellas Artes, lo que 
+  proporciona una base única para la resolución creativa de problemas.

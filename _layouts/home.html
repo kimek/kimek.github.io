@@ -1,0 +1,79 @@
+---
+layout: default
+---
+{%- assign t = site.data[page.lang] -%}
+{%- assign experience_data = site.data[page.experience_file] -%}
+{%- assign achievements_data = site.data[page.achievements_file] -%}
+
+<section style="margin-bottom: 4rem;">
+    <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">{{ t.achievements_title }}</h2>
+    <ul itemscope itemtype="https://schema.org/ItemList">
+        {% for achievement in achievements_data %}
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <meta itemprop="position" content="{{ forloop.index }}">
+                <strong itemprop="name">{{ achievement.title }}:</strong>
+                <span itemprop="description">{{ achievement.description }}</span>
+            </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section style="margin-bottom: 4rem;">
+    <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">{{ t.experience_title }}</h2>
+    <div class="posts">
+        {% for job in experience_data %}
+            <article itemprop="hasOccupation" itemscope itemtype="https://schema.org/Role" style="margin-bottom: 2rem;">
+                <p class="employment-data">{{ job.dates_display }}</p>
+                <h3 style="font-size: 1.25em;" itemprop="roleName">{{ job.title }}</h3>
+                <p style="margin-top: 0.5rem;" itemprop="description">{{ job.description }}</p>
+            </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section style="margin-bottom: 4rem;">
+    <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">{{ t.agency_title }}</h2>
+    <p>{{ t.agency_description }}</p>
+    <p style="text-align: center; font-weight: bold; margin-bottom: 2rem;">
+        <a href="https://grapple.agency/" target="_blank" itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Grapple</span></a> |
+        <a href="https://wearemarvellous.com/" target="_blank" itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">We are Marvellous</span></a> |
+        <a href="https://www.xanda.net/" target="_blank" itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Xanda</span></a>
+    </p>
+    <div>
+        <h4>{{ t.agency_projects_title }}</h4>
+        {% include section-selected-works.html %}
+    </div>
+</section>
+
+<section style="margin-bottom: 4rem; text-align: center;">
+    <h2 style="font-size: 2em; margin-bottom: 2rem;">{{ t.skills_title }}</h2>
+    <p class="fsr">
+        <a href="/frontend/" itemprop="skills">{{ t.skill_frontend }}</a> |
+        <a href="/php/" itemprop="skills">{{ t.skill_php }}</a> |
+        <a href="/devops/" itemprop="skills">{{ t.skill_devops }}</a> |
+        <a href="/nocode/responsabililties" itemprop="skills">{{ t.skill_responsibilities }}</a> |
+        <a href="/nocode/" itemprop="skills">{{ t.skill_soft }}</a>
+    </p>
+</section>
+
+<section style="margin-bottom: 4rem;">
+   <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">{{ t.education_title }}</h2>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 280px;">
+            <h3 style="font-size: 1.25em;">{{ t.awards_subtitle }}</h3>
+            <ul>
+                <li itemprop="award"><a href="https://www.awwwards.com/sites/zerodegrees-bar-restaurant-microbrewery" target="_blank">{{ t.award_1 }}</a></li>
+                <li itemprop="award"><a href="/microsoft_specialist_programming_in_html5_with_javascript_and_css3.pdf" target="_blank">{{ t.award_2 }}</a></li>
+            </ul>
+        </div>
+        <div style="flex: 1; min-width: 280px;" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+             <h3 style="font-size: 1.25em;">{{ t.education_subtitle }}</h3>
+             <p itemprop="description">{{ t.education_description }}</p>
+        </div>
+    </div>
+</section>
+
+<section style="margin-bottom: 4rem;">
+    <h2 style="text-align: center; font-size: 2em; margin-bottom: 2rem;">{{ t.contact_title }}</h2>
+    {% include section-contact.html %}
+</section>
